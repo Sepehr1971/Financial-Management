@@ -17,6 +17,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Create dummy .env file
+        run: |
+          echo "GEMINI_API_KEY=AIzaSyDummyKeyForBuildOnly" > .env
+          echo "GEMINI_API_KEY=AIzaSyDummyKeyForBuildOnly" > .env.example || true
+
       - name: Build with Gradle
         run: |
           chmod +x gradlew || true
