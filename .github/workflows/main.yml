@@ -17,8 +17,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Build APK with Gradle
-        run: chmod +x gradlew && ./gradlew assembleDebug
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Build with Gradle Wrapper
+        run: |
+          gradle wrapper
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
