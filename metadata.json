@@ -1,0 +1,6 @@
+{
+  "name": "مخارج",
+  "description": "اپلیکیشن هوشمند مدیریت مالی و هزینه‌ها با تقویم شمسی، گزارش‌گیری اکسل و پی‌دی‌اف، پشتیبان‌گیری و قیمت‌های لحظه‌ای",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
